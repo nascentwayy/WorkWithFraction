@@ -20,7 +20,7 @@
         secondFraction.Numerator *= Denominator;
         Denominator *= secondFraction.Denominator;
         Numerator += secondFraction.Numerator;
-        Console.WriteLine(ReductionFraction());
+        Console.WriteLine($"Дроби были сложены. {ReductionFraction()}");
     }
 
     public void SubtractionFraction(Fraction secondFraction)
@@ -29,21 +29,21 @@
         secondFraction.Numerator *= Denominator;
         Denominator *= secondFraction.Denominator;
         Numerator -= secondFraction.Numerator;
-        Console.WriteLine(ReductionFraction);
+        Console.WriteLine($"Произошло вычитание дробей. {ReductionFraction()}");
     }
 
     public void MultiplicationFraction(Fraction secondFraction)
     {
         Numerator *= secondFraction.Denominator;
         Denominator *= secondFraction.Denominator;
-        Console.WriteLine(ReductionFraction);
+        Console.WriteLine($"Дроби были умножены. {ReductionFraction()}");
     }
 
     public void DivideFraction(Fraction secondFraction)
     {
         Numerator *= secondFraction.Denominator;
         Denominator *= secondFraction.Numerator;
-        Console.WriteLine(ReductionFraction);
+        Console.WriteLine($"Дроби были разделены. {ReductionFraction()}");
     }
 
     public string ReductionFraction()
